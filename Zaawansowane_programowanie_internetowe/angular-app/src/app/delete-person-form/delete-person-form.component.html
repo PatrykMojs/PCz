@@ -1,0 +1,15 @@
+<h1>Usuwanie osoby!</h1>
+<form (ngSubmit)="onSubmit()" class="PersonForm">
+    <label for="personId">Id:</label>
+    <input 
+        type="number"
+        id="personId"
+        [(ngModel)]="personId"
+        name="personId"
+    />
+    <button type="submit">Usuń</button>
+</form>
+
+<div class="menu">
+    <a routerLink="/">Wróć do strony głównej</a>
+</div>

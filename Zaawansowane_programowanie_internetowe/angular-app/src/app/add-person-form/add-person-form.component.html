@@ -1,0 +1,43 @@
+<h1>Dodan nową osobę!</h1>
+<form (ngSubmit)="onSubmit()" class="PersonForm">
+    <label for="firstName">Wprowadź imię:</label>
+    <input 
+        type="text"
+        id="firstname"
+        [(ngModel)]="person.firstName"
+        name="firstname"
+        placeholder="Imię"
+    />
+
+    <label for="lastName">Wprowadź nazwisko:</label>
+    <input 
+        type="text"
+        id="lastName"
+        [(ngModel)]="person.lastName"
+        name="lastName"
+        placeholder="Nazwisko"
+    />
+
+    <label for="dateOfBirth">Wprowadź data urodzenia:</label>
+    <input 
+        type="date"
+        id="dateOfBirth"
+        [(ngModel)]="person.dateOfBirth"
+        name="dateOfBirth"
+    />
+
+    <label for="origin">Wprowadź pochodzenie:</label>
+    <input 
+        type="text"
+        id="origin"
+        [(ngModel)]="person.origin"
+        name="origin"
+        placeholder="Pochodzenie"
+    />
+
+    <button type="submit">Dodaj</button>
+</form>
+
+<div class="menu">
+    <a routerLink="/">Wróć do strony głównej</a>
+</div>
